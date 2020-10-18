@@ -12,6 +12,6 @@ The source code is under these folders:
 
 You can deploy the API in MuleSoft Anypoint (CloudHub) creating a free account in https://anypoint.mulesoft.com/
 
-Once you have deployed the API in CloudHub and created an API instance, you will need to modify the properties of the Mule project, Postmand and JMete to reflect the address of your server, and the client ID and secret.
+Once you have deployed the API in CloudHub and created an API instance, you will need to modify the properties of the Mule project, Postmand and JMeter to reflect the address of your server, and the client ID and secret.
 
 
