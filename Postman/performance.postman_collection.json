@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "5c43e88c-de4b-4c90-b7e0-ef347fda40e9",
+		"name": "performance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/testJSON",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "put_clientId_here",
+						"type": "text"
+					},
+					{
+						"key": "client_secret",
+						"value": "put_clientSecret_here",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://putServerNameHere.cloudhub.io/api/testJSON",
+					"protocol": "http",
+					"host": [
+						"putServerNameHere",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"api",
+						"testJSON"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/testDataWeave",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "put_ClientId_here",
+						"type": "text"
+					},
+					{
+						"key": "client_secret",
+						"value": "put_clientSecret_here",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://putServerNameHere.cloudhub.io/api/testDataWeave",
+					"protocol": "http",
+					"host": [
+						"putServerNameHere",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"api",
+						"testDataWeave"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/testRequest",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "put_clienId_here",
+						"type": "text"
+					},
+					{
+						"key": "client_secret",
+						"value": "put_clientSecret_here",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://putServerNameHere.cloudhub.io/api/testRequest",
+					"protocol": "http",
+					"host": [
+						"putServerNameHere",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"api",
+						"testRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/testRequestDataWeave",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "put_clientId_here",
+						"type": "text"
+					},
+					{
+						"key": "client_secret",
+						"value": "put_clientSecret_here",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://putServerNameHere.cloudhub.io/api/testRequestDataWeave",
+					"protocol": "http",
+					"host": [
+						"putServerNameHere",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"api",
+						"testRequestDataWeave"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

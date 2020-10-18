@@ -1,0 +1,158 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Performance",
+    "version": "v1"
+  },
+  "basePath": "/performance",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "paths": {
+    "/testDataWeave": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "x-amf-mediaType": "application/json",
+            "schema": {
+              "$ref": "#/definitions/data2"
+            }
+          }
+        }
+      }
+    },
+    "/testJSON": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "x-amf-mediaType": "application/json",
+            "schema": {
+              "$ref": "#/definitions/data1"
+            }
+          }
+        }
+      }
+    },
+    "/testRequest": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "x-amf-mediaType": "application/json",
+            "schema": {
+              "$ref": "#/definitions/data1"
+            }
+          }
+        }
+      }
+    },
+    "/testRequestDataWeave": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "x-amf-mediaType": "application/json",
+            "schema": {
+              "$ref": "#/definitions/data2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "data2": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "text1",
+        "text2",
+        "date",
+        "number1",
+        "number2",
+        "sum"
+      ],
+      "properties": {
+        "text1": {
+          "example": "TEXT IN UPPERCASE",
+          "type": "string"
+        },
+        "text2": {
+          "example": "Green",
+          "type": "string"
+        },
+        "date": {
+          "example": "2020-10-17T15:43:37.378Z",
+          "type": "string",
+          "format": "date-time"
+        },
+        "number1": {
+          "example": 13,
+          "type": "integer",
+          "format": "int"
+        },
+        "number2": {
+          "example": 7,
+          "type": "integer",
+          "format": "int"
+        },
+        "sum": {
+          "example": 20,
+          "type": "integer",
+          "format": "int"
+        }
+      }
+    },
+    "data1": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "text1",
+        "text2",
+        "date",
+        "number1",
+        "number2"
+      ],
+      "properties": {
+        "text1": {
+          "example": "Text with uppercase and lowecase",
+          "type": "string"
+        },
+        "text2": {
+          "example": "Red Blue Green",
+          "type": "string"
+        },
+        "date": {
+          "example": "2020-10-06T00:00:00.000Z",
+          "type": "string",
+          "format": "date-time"
+        },
+        "number1": {
+          "example": 13,
+          "type": "integer",
+          "format": "int"
+        },
+        "number2": {
+          "example": 7,
+          "type": "integer",
+          "format": "int"
+        }
+      }
+    }
+  }
+}

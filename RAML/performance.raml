@@ -1,0 +1,78 @@
+#%RAML 1.0
+title: Performance
+baseUri: /performance
+mediaType:
+  - application/json
+version: v1
+protocols:
+  - HTTP
+  - HTTPS
+/testDataWeave:
+  get:
+    responses:
+      "200":
+        body:
+          type: data2
+/testJSON:
+  get:
+    responses:
+      "200":
+        body:
+          type: data1
+/testRequest:
+  get:
+    responses:
+      "200":
+        body:
+          type: data1
+/testRequestDataWeave:
+  get:
+    responses:
+      "200":
+        body:
+          type: data2
+types:
+  data1:
+    properties:
+      text1:
+        example: Text with uppercase and lowecase
+        type: string
+      text2:
+        example: Red Blue Green
+        type: string
+      date:
+        example: 2020-10-06T00:00:00.000Z
+        type: datetime
+        format: rfc3339
+      number1:
+        example: 13
+        type: number
+        format: int
+      number2:
+        example: 7
+        type: number
+        format: int
+  data2:
+    properties:
+      text1:
+        example: TEXT IN UPPERCASE
+        type: string
+      text2:
+        example: Green
+        type: string
+      date:
+        example: 2020-10-17T15:43:37.378Z
+        type: datetime
+        format: rfc3339
+      number1:
+        example: 13
+        type: number
+        format: int
+      number2:
+        example: 7
+        type: number
+        format: int
+      sum:
+        example: 20
+        type: number
+        format: int

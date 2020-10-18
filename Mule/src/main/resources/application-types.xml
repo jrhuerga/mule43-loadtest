@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="data1" format="json">
+      <types:shape format="weave" example="examples/data1.txt"><![CDATA[%dw 2.0
+
+type data1 = {|
+  texto1: String, 
+  texto2: String, 
+  date: String, 
+  number1: Number {"typeId": "int"}, 
+  number2: Number {"typeId": "int"}
+|} {"example": "{\\\"texto1\\\":\\\"Texto con mayusculas y minusculas\\\",\\\"texto2\\\":\\\"Rojo Azul Verde\\\",\\\"date\\\":\\\"2020-10-06T00:00:00.000Z\\\",\\\"number1\\\":13,\\\"number2\\\":7}"}
+
+]]></types:shape>
+    </types:type>
+    <types:type name="data2" format="json">
+      <types:shape format="weave" example="examples/data2.txt"><![CDATA[%dw 2.0
+
+type data2 = {|
+  texto1: String, 
+  texto2: String, 
+  date: String, 
+  number1: Number {"typeId": "int"}, 
+  number2: Number {"typeId": "int"}, 
+  sum: Number {"typeId": "int"}
+|} {"example": "{\\\"texto1\\\":\\\"TEXTO EN MAYUSCULAS\\\",\\\"texto2\\\":\\\"Verde\\\",\\\"date\\\":\\\"2020-10-17T15:43:37.378Z\\\",\\\"number1\\\":13,\\\"number2\\\":7,\\\"sum\\\":20}"}
+
+]]></types:shape>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#4b07ef22-2ea0-4ab0-af2a-e42819079f98">
+    <types:processor-declaration>
+      <types:output-event>
+        <types:message>
+          <types:payload type="data1"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#d27d9fb9-1b8a-497c-bf53-1c0edb91714f">
+    <types:processor-declaration>
+      <types:output-event>
+        <types:message>
+          <types:payload type="data1"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+</types:mule>

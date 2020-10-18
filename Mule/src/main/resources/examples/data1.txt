@@ -1,0 +1,7 @@
+{
+  "text1": "Texto con mayusculas y minusculas",
+  "text2": "Rojo Azul Verde",
+  "date": "2020-10-06T00:00:00.000Z",
+  "number1": 13,
+  "number2": 7
+}

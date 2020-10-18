@@ -1,0 +1,8 @@
+{
+  "text1": "TEXTO EN MAYUSCULAS",
+  "text2": "Verde",
+  "date": "2020-10-17T15:43:37.378Z",
+  "number1": 13,
+  "number2": 7,
+  "sum": 20
+}
