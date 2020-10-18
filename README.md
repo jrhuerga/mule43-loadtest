@@ -10,6 +10,7 @@ The source code is under these folders:
 * _Postman_ : Postman collection to test the API. Change the server name and client_id and client_secret
 * _JMeter_ : Loadtest invoking the four endpoints. Change the server name and client_id and client_secret
 
+You can deploy the API in MuleSoft Anypoint (CloudHub) creating a free account in https://anypoint.mulesoft.com/
 
 
 
